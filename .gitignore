@@ -1,3 +1,4 @@
 src/config/twitter.js
 src/config/environment.js
 src/node_modules
+npm-debug.log

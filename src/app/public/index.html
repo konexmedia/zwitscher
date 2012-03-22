@@ -1,1 +1,37 @@
-index.html
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>konexmedia.com - Zwitscher</title>
+
+        <link rel="stylesheet" href="stylesheets/style.css" />
+        
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <script type="text/html" id="tweet">
+        	<li id="t<%= id %>" style="display:none">
+        	    <p><%= text %></p>
+        		<div class="info">
+        			<a href="http://twitter.com/<%= user %>" class="user"><%= user %></a>
+        						
+        					
+        			<a href="http://twitter.com/<%= user %>/status/<%= id %>"
+                            	class="date" target="_blank"><%= created %></a>
+        		</div>
+            </li>
+        </script>
+    </head>
+    
+    <body>
+		
+		<div id="container">
+	        <ul id='tweets'>			
+
+            </ul>
+        </div>
+
+		<script src="javascripts/vendor/require.js" data-main="javascripts/app"></script>
+    </body>
+</html>

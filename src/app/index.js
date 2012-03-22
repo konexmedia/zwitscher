@@ -13,7 +13,7 @@ module.exports = function (configuration) {
     // Creating the Express.js application context.
     var app = module.exports = express.createServer();
 
-    io.listen(app);
+    io = io.listen(app);
 
     // Application context configuration.
     app.configure(function () {
@@ -56,7 +56,7 @@ module.exports = function (configuration) {
     });
 
     // Init the streamer
-    require('streamer')();
+    require('./streamer')(io, configuration);
 
     // Port setup.
     // Note that the "process.env.PORT" environment variable will
