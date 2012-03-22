@@ -11,6 +11,6 @@ exports.common = {
 		consumer_secret: 'STATE YOUR CONSUMER SECRET HERE',
 		access_token_key: 'STATE YOUR ACCESS TOKEN HERE',
 		access_token_secret: 'STATE YOUR ACCESS TOKEN SECRET HERE',
-		cachetimeout: 15000 // 15s - API Limit = 350 Requests per second
+		cachetimeout: 15000 // 15s - API Limit = 350 Requests per hour
 	}
 };
