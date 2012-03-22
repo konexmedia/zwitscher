@@ -66,5 +66,5 @@ module.exports = function (configuration) {
     // Starting the application.
     app.listen(port);
 
-    console.log(configuration.meta.application.name + ' server listening on port %d in %s mode', app.address().port, app.settings.env);
+    console.log(configuration.meta.application.name + ' server listening on port %d in %s mode', port, app.settings.env);
 };
